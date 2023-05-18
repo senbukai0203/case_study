@@ -28,8 +28,8 @@ stages :
       - estimators.ElasticNet.params.l1_ratio
     outs : 
       - saved_models/model.joblib
-    # metrics : 
-    #   - reports/scores.json:
-    #       cache : False
-    #   - report/params.json: 
-    #       cache : False 
+    metrics : 
+      - report/scores.json:
+          cache : False
+      - report/params.json: 
+          cache : False 

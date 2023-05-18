@@ -69,6 +69,8 @@ def train_and_evaluate(config_path):
             "r2" : r2
         }
         json.dump(scores,f,indent=4)
+    
+    
 
     with open(params_file, "w") as f:
         params = {
